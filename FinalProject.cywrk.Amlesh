@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="FinalProject\Othello\Source Files\led_matrix.c">
+<ExpandedNodeIds>
+<v>FinalProject</v>
+<v>FinalProject\Othello</v>
+<v>FinalProject\Othello\TopDesign</v>
+<v>FinalProject\Othello\Othello.cydwr</v>
+<v>FinalProject\Othello\Header Files</v>
+<v>FinalProject\Othello\Header Files\cyapicallbacks.h</v>
+<v>FinalProject\Othello\Header Files\game_logic.h</v>
+<v>FinalProject\Othello\Header Files\led_matrix.h</v>
+<v>FinalProject\Othello\Header Files\packet_com.h</v>
+<v>FinalProject\Othello\Header Files\usb_uart.h</v>
+<v>FinalProject\Othello\Source Files</v>
+<v>FinalProject\Othello\Source Files\game_logic.c</v>
+<v>FinalProject\Othello\Source Files\led_matrix.c</v>
+<v>FinalProject\Othello\Source Files\main.c</v>
+<v>FinalProject\Othello\Source Files\packet_com.c</v>
+<v>FinalProject\Othello\Source Files\usb_uart.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\A</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\A\A.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\A\A.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\A\A_aliases.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\B</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\B\B.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\B\B.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\B\B_aliases.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\B1</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\B1\B1.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\B1\B1.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\B1\B1_aliases.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\B2</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\B2\B2.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\B2\B2.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\B2\B2_aliases.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\C</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\C\C.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\C\C.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\C\C_aliases.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\CBA_Row</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\CBA_Row\CBA_Row.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\CBA_Row\CBA_Row.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\CBA_Row\CBA_Row_PM.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\CLK</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\CLK\CLK.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\CLK\CLK.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\CLK\CLK_aliases.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cursor_clock</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cursor_clock\cursor_clock.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cursor_clock\cursor_clock.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\Cursor_Update_Timer</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\Cursor_Update_Timer\Cursor_Update_Timer.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\Cursor_Update_Timer\Cursor_Update_Timer.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\Cursor_Update_Timer\Cursor_Update_Timer_PM.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\cmsis_armcc.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\cmsis_gcc.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\cypins.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\G1</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\G1\G1.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\G1\G1.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\G1\G1_aliases.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\G2</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\G2\G2.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\G2\G2.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\G2\G2_aliases.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\LAT</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\LAT\LAT.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\LAT\LAT.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\LAT\LAT_aliases.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\LCD</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\LCD\LCD.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\LCD\LCD.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\LCD\LCD_PM.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\LCD_LCDPort</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\LCD_LCDPort\LCD_LCDPort.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\LCD_LCDPort\LCD_LCDPort.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\LCD_LCDPort\LCD_LCDPort_aliases.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\LED_Update_Timer</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\LED_Update_Timer\LED_Update_Timer.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\LED_Update_Timer\LED_Update_Timer.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\LED_Update_Timer\LED_Update_Timer_PM.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\OE</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\OE\OE.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\OE\OE.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\OE\OE_aliases.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\packet_clock</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\packet_clock\packet_clock.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\packet_clock\packet_clock.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\Packet_Uart</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\Packet_Uart\Packet_Uart.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\Packet_Uart\Packet_Uart.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\Packet_Uart\Packet_Uart_BOOT.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\Packet_Uart\Packet_Uart_INT.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\Packet_Uart\Packet_Uart_PM.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\Packet_Uart_IntClock</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\Packet_Uart_IntClock\Packet_Uart_IntClock.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\Packet_Uart_IntClock\Packet_Uart_IntClock.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\R1</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\R1\R1.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\R1\R1.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\R1\R1_aliases.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\R2</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\R2\R2.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\R2\R2.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\R2\R2_aliases.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\RGB_1</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\RGB_1\RGB_1.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\RGB_1\RGB_1.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\RGB_1\RGB_1_PM.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\RGB_2</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\RGB_2\RGB_2.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\RGB_2\RGB_2.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\RGB_2\RGB_2_PM.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\rx_packet_isr</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\rx_packet_isr\rx_packet_isr.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\rx_packet_isr\rx_packet_isr.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\timer_clock</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\timer_clock\timer_clock.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\timer_clock\timer_clock.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\timerIsr</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\timerIsr\timerIsr.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\timerIsr\timerIsr.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\tx_allow_isr</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\tx_allow_isr\tx_allow_isr.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\tx_allow_isr\tx_allow_isr.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\tx_packet_allow</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\tx_packet_allow\tx_packet_allow.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\tx_packet_allow\tx_packet_allow.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\tx_packet_allow\tx_packet_allow_PM.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\tx_packet_isr</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\tx_packet_isr\tx_packet_isr.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\tx_packet_isr\tx_packet_isr.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\tx_sender</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\tx_sender\tx_sender.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\tx_sender\tx_sender.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\tx_sender\tx_sender_PM.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_audio.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_audio.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_boot.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_cdc.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_cdc.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_cdc.inf</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_cls.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_cydmac.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_descr.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_drv.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_episr.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_hid.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_hid.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_midi.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_midi.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_msc.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_msc.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_pm.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_pvt.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_std.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART\USBUART_vnd.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART_Dm</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART_Dm\USBUART_Dm.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART_Dm\USBUART_Dm.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART_Dm\USBUART_Dm_aliases.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART_Dp</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART_Dp\USBUART_Dp.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART_Dp\USBUART_Dp.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\USBUART_Dp\USBUART_Dp_aliases.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cydevice.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cydevicerv.inc</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cydisabledsheets.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cyfitter.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cyfitter_cfg.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cyfitter_cfg.h</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cyfittergnu.inc</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cyfitteriar.inc</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cyfitterrv.inc</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\cymetadata.c</v>
+<v>FinalProject\Othello\Generated_Source\PSoC5\project.h</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>FinalProject</v>
+<v>FinalProject\Othello</v>
+<v>FinalProject\Othello\TopDesign</v>
+<v>FinalProject\Othello\Othello.cydwr</v>
+<v>FinalProject\Othello\Header Files</v>
+<v>FinalProject\Othello\Header Files\cyapicallbacks.h</v>
+<v>FinalProject\Othello\Header Files\game_logic.h</v>
+<v>FinalProject\Othello\Header Files\led_matrix.h</v>
+<v>FinalProject\Othello\Header Files\packet_com.h</v>
+<v>FinalProject\Othello\Header Files\usb_uart.h</v>
+<v>FinalProject\Othello\Source Files</v>
+<v>FinalProject\Othello\Source Files\game_logic.c</v>
+<v>FinalProject\Othello\Source Files\led_matrix.c</v>
+<v>FinalProject\Othello\Source Files\main.c</v>
+<v>FinalProject\Othello\Source Files\packet_com.c</v>
+<v>FinalProject\Othello\Source Files\usb_uart.c</v>
+<v>FinalProject\Othello\Generated_Source</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>FinalProject</v>
+<v>FinalProject\Othello</v>
+<v>FinalProject\Othello\TopDesign</v>
+<v>FinalProject\Othello\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>FinalProject</v>
+<v>FinalProject\Othello</v>
+<v>FinalProject\Othello\TopDesign</v>
+<v>FinalProject\Othello\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>FinalProject</v>
+<v>FinalProject\Othello</v>
+<v>FinalProject\Othello\CortexM3</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\A.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\B.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\B1.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\B2.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\C.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\CBA_Row.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\CBA_Row_PM.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\CLK.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\cursor_clock.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\Cursor_Update_Timer.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\Cursor_Update_Timer_PM.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\G1.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\G2.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\game_logic.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\LAT.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD_LCDPort.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD_PM.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\led_matrix.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\LED_Update_Timer.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\LED_Update_Timer_PM.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\OE.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\packet_clock.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\packet_com.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\Packet_Uart.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\Packet_Uart_BOOT.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\Packet_Uart_INT.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\Packet_Uart_IntClock.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\Packet_Uart_PM.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\R1.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\R2.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\RGB_1.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\RGB_1_PM.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\RGB_2.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\RGB_2_PM.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\rx_packet_isr.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\timer_clock.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\timerIsr.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\tx_allow_isr.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\tx_packet_allow.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\tx_packet_allow_PM.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\tx_packet_isr.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\tx_sender.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\tx_sender_PM.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\usb_uart.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_audio.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_boot.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_cdc.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_cls.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_descr.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_Dm.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_Dp.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_drv.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_episr.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_hid.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_midi.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_msc.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_pm.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_std.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\USBUART_vnd.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Othello.elf</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Othello.hex</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Othello.map</v>
+<v>FinalProject\Othello\Othello.gpdsc</v>
+<v>FinalProject\Othello\Othello.rpt</v>
+<v>FinalProject\Othello\Othello_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>FinalProject</v>
+<v>FinalProject\Othello</v>
+<v>FinalProject\Othello\CortexM3</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\A.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\B.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\B1.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\B2.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\C.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\CBA_Row.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\CBA_Row_PM.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\CLK.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\cursor_clock.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\Cursor_Update_Timer.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\Cursor_Update_Timer_PM.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\G1.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\G2.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\game_logic.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\LAT.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD_LCDPort.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\LCD_PM.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\led_matrix.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\LED_Update_Timer.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\LED_Update_Timer_PM.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\OE.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\packet_clock.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\packet_com.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\Packet_Uart.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\Packet_Uart_BOOT.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\Packet_Uart_INT.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\Packet_Uart_IntClock.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\Packet_Uart_PM.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\R1.lst</v>
+<v>FinalProject\Othello\CortexM3\ARM_GCC_493\Debug\Listing Files\R2.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>FinalProject</v>
+<v>FinalProject\Othello</v>
+<v>FinalProject\Othello\PSoC 5 Architecture TRM</v>
+<v>FinalProject\Othello\CY8C58LP Family Datasheet</v>
+<v>FinalProject\Othello\System Reference Guides</v>
+<v>FinalProject\Othello\System Reference Guides\cy_boot_v5_40</v>
+<v>FinalProject\Othello\and_v1_0.pdf</v>
+<v>FinalProject\Othello\CharLCD_v2_20.pdf</v>
+<v>FinalProject\Othello\cy_clock_v2_20</v>
+<v>FinalProject\Othello\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>FinalProject\Othello\cy_isr_v1_70</v>
+<v>FinalProject\Othello\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>FinalProject\Othello\cy_pins_v2_20</v>
+<v>FinalProject\Othello\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>FinalProject\Othello\CyControlReg_v1_80</v>
+<v>FinalProject\Othello\CyControlReg_v1_80\CyControlReg_v1_80.pdf</v>
+<v>FinalProject\Othello\Timer_v2_70</v>
+<v>FinalProject\Othello\Timer_v2_70\Timer_v2_70.pdf</v>
+<v>FinalProject\Othello\UART_v2_50.pdf</v>
+<v>FinalProject\Othello\USBFS_v3_0.pdf</v>
+<v>FinalProject\Othello\ZeroTerminal</v>
+<v>FinalProject\Othello\ZeroTerminal\ZeroTerminal.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>FinalProject</v>
+<v>FinalProject\Othello</v>
+<v>FinalProject\Othello\PSoC 5 Architecture TRM</v>
+<v>FinalProject\Othello\CY8C58LP Family Datasheet</v>
+<v>FinalProject\Othello\System Reference Guides</v>
+<v>FinalProject\Othello\System Reference Guides\cy_boot_v5_40</v>
+<v>FinalProject\Othello\and_v1_0.pdf</v>
+<v>FinalProject\Othello\CharLCD_v2_20.pdf</v>
+<v>FinalProject\Othello\cy_clock_v2_20</v>
+<v>FinalProject\Othello\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
+<v>FinalProject\Othello\cy_isr_v1_70</v>
+<v>FinalProject\Othello\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>FinalProject\Othello\cy_pins_v2_20</v>
+<v>FinalProject\Othello\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>FinalProject\Othello\CyControlReg_v1_80</v>
+<v>FinalProject\Othello\CyControlReg_v1_80\CyControlReg_v1_80.pdf</v>
+<v>FinalProject\Othello\Timer_v2_70</v>
+<v>FinalProject\Othello\Timer_v2_70\Timer_v2_70.pdf</v>
+<v>FinalProject\Othello\UART_v2_50.pdf</v>
+<v>FinalProject\Othello\USBFS_v3_0.pdf</v>
+<v>FinalProject\Othello\ZeroTerminal</v>
+<v>FinalProject\Othello\ZeroTerminal\ZeroTerminal.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\Othello.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Othello.cydsn\Othello.cydwr" />
+<name v=".\Othello.cydsn\main.c" />
+<name v=".\Othello.cydsn\led_matrix.h" />
+<name v=".\Othello.cydsn\led_matrix.c" />
+<name v=".\Othello.cydsn\usb_uart.h" />
+<name v=".\Othello.cydsn\usb_uart.c" />
+<name v=".\Othello.cydsn\game_logic.h" />
+<name v=".\Othello.cydsn\game_logic.c" />
+<name v=".\Othello.cydsn\packet_com.h" />
+<name v=".\Othello.cydsn\packet_com.c" />
+</OpenDocs>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
