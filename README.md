@@ -12,9 +12,19 @@ http://www.cypress.com/documentation/component-datasheets/file-system-library-em
 
 (Make sure the it is v3.22C)
 
-Once those files are downloaded, you may proceed to build the code. If the code does not build because the library above is not correctly configured Please follow these steps to ensure that the library is correctly linked with the linker and the compier and the linker
+Once those files are downloaded, you may proceed to build the code. If the code does not build because the library above is not correctly configured Please follow these steps to ensure that the library is correctly linked with the linker and the compiler.
+
+  * In the project's top level design, search for EmFile in the component catalog and add it to the schematic.
+  * Set up which GPIO pins to use for the SD Card by opening Othello.cydwr in PSoC creator. (These will vary, but if you are following my design, refer to the other documents in the docs folder!)
+  * Click on *Project > Build Settings* and add the EmFile Library by going to *ARM GCC > Linker > Additional Libraries* Add a new directory titled "emf32nosnlfn".
+  * On additional library directories, locate the folder of the EmFile Library you downloaded and add a new directory for each of the following. **\Code\Include\PSoC5\emf32nOS**, **\LinkLibrary\PSoC5** and **\LinkLibrary\PSoC5\GCC**.
+  * Under *ARM GCC > Compiler*, on the additional include directories, add**\Code\Include\PSoC5** and **\Code\Include\PSoC5\emf32nOS**
+  
+At this point, the project should be able to build without any errors. However, the compiler might throw a warning stating that EmFile has some timing issues. This is not a problem and should be ignored.
 
 ## Playing the Game
+
+*Work In Progress*
 
 ## Further Documentation
 
