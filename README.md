@@ -1,6 +1,11 @@
 # Othello-Reversi-For-the-PSoC-5LP
 Othello for the CY8KIT-050 PSoC 5LP.
 
+- [ ] Program an AI to play against.
+- [ ] Connect AI to WiFi (Will be almost impossible to test)
+- [ ] Enable functions to save multiple replays
+- [ ] Be able to load a replay to play a game.
+- [ ] Clean up the code and write a API doc.
 ## Building the Code
 
 To build the code you will need to ensure that certain dependencies are met.
