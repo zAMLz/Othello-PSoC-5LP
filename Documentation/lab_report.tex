@@ -18,9 +18,8 @@
 
 	The purpose of this lab project was to implement a fully functioning
     game called Othello (Reversi) on the PSoC-5 Microcontroller which built
-    on everything we have learned up to this point in the class. The goals at
-    the end of the final project were that we would have learned to create
-    a functioning hardware and software component. I will go over the whole
+    on everything we have learned up to this point in the class.  
+    I will go over the whole
     process and go over core functionality of the project in the order that I
     implemented it. However, I will start by explaining the process of
     setting up the hardware first, but it should be noted that each hardware
@@ -29,6 +28,13 @@
     constraints I was unable to start them. I will ultimately finish
     the features I didn't implement over the winter break. I will go over the
     details of what those features are in the Conclusion section.
+    \\ \\
+    The end goal of the project is to build a playable game called Reversi. The
+    board should be controller with the use of a keyboard connected through
+    USB-Uart and the board should also get input for the opponents turn through
+    WiFi from another board that the user has decided to connect to. The game should
+    be robust and handle errors correctly, and behave in the manner that the
+    game was suppose to be played in.
 
     \section{Hardware Design}
  
@@ -38,21 +44,22 @@
     only implemented when it came to implement it's respective software
     component. However, It should be noted that first, the breadboard
     was used to prototype the component and test it with the code. Once that
-    was verified, it was verified that it was working correctly, the
+    was verified, the
     components were soldered onto the Perf Board provided to us in the Lab
     Kits. All initial schematics were drawn by hand. 
     \\ \\
     This class was the first time I was introduced to soldering, so I was
     bound to make a mistake. In the process of soldering I made bad
     connections and burnt myself once. This was alright however since I was
-    able to verify the my circuit with continuity checks. I had to get a
-    replacement SD Card Reader however. In the process of soldering, I
-    initially placed the pins the wrong way. Removing the pins was literally
-    impossible, but eventually I was able to remove the pins. However there
+    able to verify my circuit with continuity checks. Unfortunately, I had to get a
+    replacement SD Card Reader. In the process of soldering, I
+    initially placed the pins into the SD Card Reader the wrong way. Removing 
+    the pins was literally
+    impossible, but eventually they came off. However there
     was still some leftover solder covering the holes where the pins should
-    go. Hence I needed to use the soldering iron and the solder remover to
+    go. Hence I used the soldering iron and the solder-remover to
     remove that remaining solder. Sadly, in the process of removing the
-    solder, I managed to burn away the metal plate. Luckily BELS was kind
+    solder, I managed to burn away the metal contact. Luckily BELS was kind
     enough to allow me to get it replaced for free (it is \$10 normally).
     
     \clearpage
@@ -157,17 +164,18 @@ int main()
     \subsection{LED Matrix (\textit{led\_matrix.h})}
 
     The LED Matrix is handled very easily. It is triggered via the timer
-    interrupt that we say at the top level. It works very much the same way
+    interrupt that is present in the top design. It works very much the same way
     that it did in Lab 5, but it gets its color data from a color function
     that has been designed elsewhere. This code is also nearly 100\% modular.
     The only change to port the code elsewhere is to the change the color
-    data function. The color data function should take in an input for the
+    data function call. The color data function should take in an input for the
     absolute row and column number and it should figure out what color to
     actually display there. This was done to avoid timing issues. It may be
     a little slower, but it still proved to be a viable method for updating
     the screen while producing no ghosting. The color function will be
     covered in the section pertaining to game logic. Seen below is the components
-    pertaining to this section and code of the \textbf{LED\_Update} ISR.
+    in the top design pertaining to this section and code of the 
+    \textbf{LED\_Update} ISR to go along with it.
 
     \begin{figure}[H]
         \centering
@@ -282,13 +290,13 @@ char usb_uart_get() {
     While we are processing to the core functionality of the game, we probably
     want to tell the user various information. Thus we will want to create a
     function that will constantly print strings. However, due to the nature of
-    the main function, we want to print out after the game update functions
-    happen. Thus we will need to create a lot of TX Buffer; in our case, we have
+    the main function, we want to print out these details after the game update functions
+    have happened. Thus we will need to create multiple TX Buffers; in our case, we have
     defined it as \textit{usbDataTX[64][64]}. By creating a function called
     \textbf{usb\_uart\_commit()} which takes in a pointer to a character
     array, we can add data to the TX Buffer. And as seen in the main function,
     we can then use \textbf{usb\_uart\_push()} to push the data that is
-    present in the TX Buffers.
+    present in the all the TX Buffers.
 
 \begin{minted}{C}
 // Commits data into the TX Buffers
@@ -337,11 +345,11 @@ void usb_uart_push() {
     this module also opens up the ability to error check the code with ease.
     You will notice that in later functions, there be commented out code
     that will be just be a calling \textbf{usb\_uart\_commit()} to print
-    data back to the host. If we take a look back at our main function, you
-    will notice that we have essentially created the behavior that we
-    wanted. 
+    data back to the host. 
     \\ \\
-    You will also notice the update function in the middle,
+    Now if we take a look back at our main function, you
+    will notice that we have essentially created the behavior that we
+    wanted. You will also notice the update function in the middle,
     \textbf{shell\_update()}. For the sake of understanding the game logic, let
     us assume that it directly calls the function \textbf{game\_logic\_update()} from the
     file \textit{game\_logic.h}. The shell is essentially a layer above the
@@ -419,7 +427,9 @@ void game_board_init(int board_size) {
     The swap happens in the function \textbf{game\_logic\_super\_update()}.
     \\ \\
     The game board is setup so that it always appears on the center of the screen.
-    This easily done by maintaining a 16 x 16 grid. However, we wish to know
+    This is easily done by maintaining a 16 x 16 grid in the middle of the LED
+    Matrix. But this means that the row one and column one of different board sizes will 
+    have different positions on the LED Matrix. Thus we wish to know
     what the indicies of the row one and column one are. The variables
     \textit{colBound} and \textit{rowBound} essentially will keep the true
     location of row one and column one for a given board size. Because of the
@@ -445,8 +455,8 @@ void game_board_init(int board_size) {
     present in this file but we won't look at those. If we take a look at
     the function \textbf{game\_logic\_update()}, we will notice that it takes
     in the user byte command and tries to figure out if it is a meaningful
-    input. Essentially it just calls the function to move the cursor, reset
-    the board, pass the turn, and place the piece. If a piece was successfully
+    input. Essentially it may just call the function to move the cursor, reset
+    the board, pass the turn, or place the piece. If a piece was successfully
     placed or the user passed their turn, the global variable \textit{gameChange}
     will be set to true. This will call the function 
     \textbf{game\_logic\_super\_update()} to switch the players as mentioned
@@ -454,7 +464,7 @@ void game_board_init(int board_size) {
     \\ \\
     There is a sister function to \textbf{game\_logic\_update()} called
     \textbf{game\_logic\_update\_pve()} which does the same thing but with
-    the assumption that there is also an online guest. Here is the code below.
+    the assumption that there is also a guest player across WiFi. Here is the code below.
 
     \begin{minted}{C}
 void game_logic_update_pve(uint8 command) {
@@ -478,7 +488,7 @@ void game_logic_update_pve(uint8 command) {
 }
     \end{minted}
 
-    We can see that is uses the variable \textit{local\_turn} to keep track of
+    We can see that it uses the variable \textit{local\_turn} to keep track of
     whether it is the guest's turn or the host's turn. If it is the host's
     turn, it will call the actual \textbf{game\_logic\_update()} function.
     If it is the guest's turn, it will try to get their row and col that
@@ -501,8 +511,8 @@ void game_logic_update_pve(uint8 command) {
     recursively marks the locations in which are potential locations using the
     \textit{player\_cur\_pot} which holds the color information for the
     potential locations of that player. As mentioned before, the game is a 16
-    x 16 grid which contains the state of pieces. It also has the color
-    information stored into it. But the more important thing is that each cell
+    x 16 grid which contains the state of pieces. This grid is essentially the
+    grid which also stores the color. But the more important thing is that each cell
     in the grid has the type \textit{uint16}. The reason for this is so that
     we can store the color information in the lower 8 bits, and some other
     useful information in the upper 8-bits. Particularly, we will store the
@@ -540,6 +550,10 @@ void game_logic_update_pve(uint8 command) {
     The remaining two functions are the write and append functions. It will
     take a file name and data string as input. They are coded the exact same
     way and with just one simple change in the \textbf{FS\_FOpen()} function.
+    \\ \\
+    In the function \textbf{game\_logic\_super\_update()}, we will call the
+    append function \textbf{sd\_card\_append()} to append the new successful move
+    to the SD Card's Log file. 
 
 
 
@@ -617,7 +631,7 @@ void shell_update() {
     game modes. Notice how every state has a function (except the 
     unimplemented game modes and END) and each function takes in the byte
     data. This essentially allows each state to process the byte data 
-    differently depending on which state it is in. If it is in any one of the
+    differently. If it is in any one of the
     menu or advertise states, then the command is added to the command buffer.
     Otherwise it will used to give input to the current game.
     \\ \\
@@ -736,7 +750,7 @@ void command_execute(int command) {
     function. This will trigger the \textit{Advertise} case and will then
     call the function \textbf{construct\_host\_advert()} so that it will
     create the string to send to the wifi card for advertising. The other
-    commands  work like this as well.
+    commands also work in a similar manner.
 
     
 
@@ -792,7 +806,7 @@ CY_ISR(tx_interrupt) {
 
     \begin{figure}[H]
         \centering
-        \includegraphics[scale=0.6]{pics/packet_com}
+        \includegraphics[scale=0.5]{pics/packet_com}
         \caption{Overview of the TX and RX ISRs}
         \label{fig:TXRXSetup}
     \end{figure}
@@ -806,6 +820,192 @@ CY_ISR(tx_interrupt) {
     process a single byte at a time. Hence, we will need to deploy a
     sequential state machine that will help us keep track of what we are looking
     for when we get each byte. The state machine can be seen below.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.4]{pics/rx_state_machine}
+        \caption{Overview of the RX Sequential State Machine}
+        \label{fig:TXRXSetup}
+    \end{figure}
+
+    The actual conditions are much more complex and in reality, the state
+    machine may stay in the same state for a while before proceeding
+    to another state. It will utilize a variable called \textit{rxcount} to
+    identify where it is in the packet. Using that variable, the state
+    machine can figure out what to look for. For example, let us take a look
+    at the \textit{NAME} state.
+
+    \begin{minted}{C}
+ // Check to see if the player ID is valid
+case NAME:
+    
+    if (pbyte == pkt_guest.id[rxcount-2]) {
+        pkt_guest_data[rxcount++] = pbyte;
+        
+        if(rxcount > guest_id_size + 1 ) {rxstate = SPACE;}
+    }
+    
+    else rx_reset();
+    
+    break;
+    \end{minted}   
+
+    Here, variable \textit{pbyte} is the byte we just received. Since the
+    guest ID is saved, we can use that to test to see if it is the correct
+    byte. Furthermore, we can use the value of \textit{rxcount - 2} as the
+    starting index for the guest ID as it accounts for the two bytes we would
+    receive earlier. If that statement turns out to be false, we run the
+    function \textbf{rx\_reset()} which resets the state and sets the 
+    variable \textit{txcount} to zero. Otherwise, if it was true, we check to
+    see if we satisfy the condition to proceed to the next state. In the case
+    above, we check to see if we passed getting input for the guest ID. If so,
+    it means that our next byte we receive should be space, so we set the
+    state to the \textit{SPACE} state. Otherwise, we do nothing and still
+    stay in the \textit{NAME} state.
+    \\
+    The primary function of the RX ISR is to receive status information from
+    the WiFi Board and display it. This information will also include various
+    IP addresses. Here is the code of the RX ISR if we are in any one of the
+    menu or advertise states.
+
+    \begin{minted}{C}
+// Get and store the byte data.
+uint8 pbyte = Packet_Uart_GetChar();
+    
+advert_buffer[advert_buffer_count] = pbyte;
+advert_buffer_count++;
+
+if((pbyte == '\r') || (pbyte == '\n') || (advert_buffer_count >= 63)) {
+    
+    advert_buffer[advert_buffer_count]='\0';
+    
+    if(board_state != MENU)
+        usb_uart_commit(advert_buffer);
+    
+    char temp_str[7][20] = {};
+    sscanf(advert_buffer, "%s %s %s %s %s %s %s",
+        temp_str[0],temp_str[1],temp_str[2],temp_str[3],
+        temp_str[4],temp_str[5],temp_str[6]);
+    if(!strcmp(get_host_id(),temp_str[1]) && !host_ip) {
+        host_ip = evaluate_ip(temp_str[6]);
+        
+        usb_uart_commit("Obtained the Host Ip Address\r\n");
+        //sprintf(temp_str[6],"\r\r%lx\r\r",host_ip);
+        //usb_uart_commit(temp_str[6]);
+    }
+    
+    else if(!strcmp("Connected",temp_str[0])) {
+        guest_ip = evaluate_ip(temp_str[2]);
+        copy_guest_id(ip_hash[guest_ip & 0x00FF].id);
+        
+        usb_uart_commit("Obtained the Guest Ip Address\r\n");
+        //sprintf(temp_str[6],"\r\r%lx\r\r",host_ip);
+        //usb_uart_commit(temp_str[6]);
+    }
+    
+    else if(!strcmp("Player",temp_str[0])) {        
+        uint16 temp_mod;
+        
+        temp_ip = evaluate_ip(temp_str[6]);
+        //temp_mod = temp_ip % 256;
+        temp_mod = temp_ip & 0x000000FF;
+        ip_hash[temp_mod].ip = temp_ip;
+        
+        int i = 0;
+        while(temp_str[1][i]) {
+            ip_hash[temp_mod].id[i] = temp_str[1][i];
+            i++;
+        }
+        ip_hash[temp_mod].id[i] = '\0';
+        
+        //usb_uart_commit("Stored in Hash Table\r\n");
+        //sprintf(temp_str[6],"\r\r%lx\r\r",host_ip);
+        //usb_uart_commit(temp_str[6]);
+    }
+    
+    int i;
+    for(i = 0; i < 150; i++)
+        advert_buffer[i]='\0';
+        
+    advert_buffer_count = 0;
+}
+    \end{minted}
+
+    If we take a look at this code, we will see that all it does is take the
+    incoming byte and save it into a buffer. Should the byte received be a
+    newline character or the buffer has been filled, we must then proceed to
+    process it. If we are not in the \textit{MENU} state, we want to print out
+    what we just got. Next thing that we want to do is see if we can obtain
+    some crucial pieces of information. Essentially, when the user uses the
+    connect command in the Shell, we want to be able to take the inputted IP
+    address and find their name. Instead of saving a single person's name, I
+    decided to save everyone I came across with the help of a hash table.
+    \\ \\
+    The first condition simply finds and saves my IP address. if the variable
+    \textit{host\_ip} is set to zero and a part of the buffer is equal to
+    the host name, then we know that line must contain the IP address. By using
+    a helper function to calculate the IP address, we can save that ip address
+    to \textit{host\_ip}. Let's skip the second condition and go straight to
+    the third condition. Essentially, if the first word is "Player" then it
+    must also contain an IP address for some player. So we store the Player ID
+    in the hash table in index that is related to the IP Address. As it turns
+    out, the board does not like taking the modulus of a 32-bit number as it
+    was hanging at this part of code. I had to change it so that the hashing
+    function would only look at the first 8 bits and use that as the index.
+    Now if we take a look at the second condition, we see that we are searching
+    to see if the first word is "Connected". This implies that we have connected
+    with somebody. The following word is the IP address, so we can now use that
+    as an index for the hash table to figure out what the player ID was. There
+    was a major constraint by implementing this method. It meant that in order
+    for me to play with someone across WiFi, I must have displayed
+    their details and my details (from advertising) on coolterm atleast once.
+    It would the only way for me to get my own IP address and to figure who I
+    connected to based on the guest IP address.
+
+
+    \section{Conclusion}
+
+    This lab was an amazing learning experience because it really tied in every
+    aspect of engineering design. There were many different layers of abstraction
+    that we had to implement and seeing it work together like clockwork was
+    really pleasing. I think so far, I've had the most fun in this class. I
+    believe that my code was very efficient, with respect to what I was trying
+    to do, but once I got to WiFi, changing some core functionality of the 
+    \textit{packet\_com.h} header file proved to be very troublesome. There
+    are a couple redunent functions present that could have been cleaned up
+    and made into a single function with enough abstraction. But as it neared,
+    the check-off time, I was desperate to get everything to work and got lazy
+    in my approach. Luckily it all worked, but there were quite a bit of times
+    in the last 24 hours were I was stuck on unconventional problems. 
+    \\ \\
+    For example,
+    my \textbf{place\_piece\_nonlocal()} function was behaving incorrectly. After,
+    3 hours of debugging, I found the error to be a typo in the variables name.
+    Another bug I was facing was that I was unable to connect to my friend's
+    board in the lab room. When the 'connect' command was used, almost always,
+    one of our boards would hang. It was very rarely that the both boards would
+    be successfully connected. This drove me a little mad. I could not figure
+    out for the life of me what the error was in my code. My friend proceeded 
+    to test with other boards and he was able to connect to other boards just fine.
+    This lead me to believe that the error was in my code. I spent maybe the past
+    9 hours before the check-off trying to figure out what the problem was. As it
+    turns out, there was no apparent problem when I decided to connect to other
+    people's boards. For some reason, I was not able to connect to only my friend's
+    board in particular. If I had just decided to test it with other people's board
+    instead of just my friend's, I would have been done with WiFi nine hours before
+    check-off. My mistake here was that I wasn't testing various different scenarios
+    to see if I could still produce that error. I still don't know what the real cause
+    of the error is, but I also think it is something that I wouldn't be able to
+    diagnose.
+    \\ \\
+    I believe this class been a great learning experience and I will definitely use
+    this board for DIY projects alongside my Raspberry Pi. Over the next few weeks,
+    my plans are to finish implementing the features that are marked unfinished on
+    the flow chart. I will also cleanup the code base and try to optimize and make
+    an API document I have this whole project in a private repository on GitHub so having
+    it completed will look really nice. Although no one can see my project, having 
+    a completed well-documented project will look really nice on my portfolio. 
+    Thank you for this class.
 
 
 \end{document}

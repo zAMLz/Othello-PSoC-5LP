@@ -2,7 +2,6 @@ CFLAGS=-Wall -g
 
 all:
 	make pdf
-	make clean
 	mupdf lab_report.pdf &
 
 pdf:
