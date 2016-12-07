@@ -349,8 +349,12 @@
 <name v=".\Othello.cydsn\led_matrix.c" />
 <name v=".\Othello.cydsn\usb_uart.h" />
 <name v=".\Othello.cydsn\usb_uart.c" />
+<name v=".\Othello.cydsn\othello_shell.h" />
+<name v=".\Othello.cydsn\othello_shell.c" />
 <name v=".\Othello.cydsn\game_logic.h" />
 <name v=".\Othello.cydsn\game_logic.c" />
+<name v=".\Othello.cydsn\sd_card.h" />
+<name v=".\Othello.cydsn\sd_card.c" />
 <name v=".\Othello.cydsn\packet_com.h" />
 <name v=".\Othello.cydsn\packet_com.c" />
 </OpenDocs>
