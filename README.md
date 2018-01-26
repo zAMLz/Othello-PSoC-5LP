@@ -1,6 +1,7 @@
 # Othello-Reversi-For-the-PSoC-5LP
 Othello for the CY8KIT-050 PSoC 5LP.
 
+Extreme REACH Goals
 - [ ] Program an AI to play against.
 - [ ] Connect AI to WiFi (Will be almost impossible to test)
 - [ ] Enable functions to save multiple replays
